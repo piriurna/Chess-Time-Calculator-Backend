@@ -4,7 +4,7 @@
   "description": "a chess calculator to see how many hours an user has playing chess in chess.com",
   "main": "index.js",
   "scripts": {
-    "start":"node index.js",
+    "start":"node index.js -p $PORT",
     "test": "echo node index.js"
   },
   "repository": {
