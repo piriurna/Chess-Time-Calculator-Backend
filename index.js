@@ -48,13 +48,13 @@ app.get('/chesscom/:userId', (req, res) => {
                         var totalTime = endSeconds - startSeconds
         
                         if (totalTime > 0){
-                            console.log(date)
-                            console.log(totalTime)
-                            console.log("\n")
+                            // console.log(date)
+                            // console.log(totalTime)
+                            // console.log("\n")
                             totalTimePlayed = totalTimePlayed + totalTime
                         }
                     }else{
-                        console.log(gameJson)
+                        // console.log(gameJson)
                         continue
                     }
                 }
