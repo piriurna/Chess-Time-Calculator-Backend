@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express();
-const port = process.env.PORT|8000;
+const PORT = process.env.PORT || 3000;;
 
 const axios = require('axios');
 const { response } = require('express');
@@ -66,7 +66,7 @@ app.get('/chesscom/:userId', (req, res) => {
         )
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}!`)
+app.listen(PORT, () => {
+  console.log(`App listening on port ${PORT}!`)
 });
 
