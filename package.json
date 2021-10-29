@@ -22,7 +22,10 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.24.0",
+    "chess-web-api": "^1.1.0",
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "events": "^3.3.0",
+    "express": "^4.17.1",
+    "queue": "^6.0.2"
   }
 }
