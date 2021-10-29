@@ -62,10 +62,6 @@ async function getTotalTimeFromArchive(url){
     })
 }
 
-app.use(cors({
-    origin: 'http://localhost:3000/'
-}));
-
 app.get('/chesscom/:userId',cors(), async (req, res) => {
     var userId = req.params.userId
     console.log('request from ' + req.headers.origin)
@@ -75,7 +71,7 @@ app.get('/chesscom/:userId',cors(), async (req, res) => {
     })
     if(urlsRes == undefined) return
     
-    const q = queue({results: [], concurrency : 2})
+    const q = queue({results: [], concurrency : 1})
 
     var totalTimePlayed =  0
     for(urlIndex in urlsRes.data.archives){ 
